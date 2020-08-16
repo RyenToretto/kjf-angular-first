@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "kjf-angular-first"
+    }
+  },
+  "defaultProject": "kjf-angular-first",
+  "cli": {
+    "analytics": "208fc488-42fd-4ba2-b6d9-ee8c0c24541c"
+  }
 }
