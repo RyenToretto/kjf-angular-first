@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { SunTribeComponent } from './sun-tribe/sun-tribe.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+    { path: 'sunTribe', component: SunTribeComponent }
+];
 
 @NgModule({
     imports: [RouterModule.forRoot(routes)],

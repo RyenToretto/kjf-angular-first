@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 
 import {Observable, of} from "rxjs";
 
+import {HeroMessageService} from "./hero-message.service";
+
 import {Hero} from "./declares/hero";
 
 import {HEROES} from "./mock-data/mock-heroes";
@@ -14,7 +16,9 @@ import {HEROES} from "./mock-data/mock-heroes";
 })
 export class HeroService {
 
-    constructor() { }
+    // 服务中的服务
+    // Angular 将会在创建 HeroService 时把 HeroMessageService 的单例注入到这个属性中
+    constructor(private heroMessageService: HeroMessageService) { }
 
     /****
      * 应用从远端服务器获取英雄数据，天生就是异步操作
@@ -27,6 +31,7 @@ export class HeroService {
      这里使用 RxJS 的 of() 函数来模拟从服务器返回数据
      ****/
     requestHeroes(): Observable<Hero[]> {
+        this.heroMessageService.addHeroMessage('HeroService: 请求到了 Heroes[]');
         return of(HEROES);
     }
 }

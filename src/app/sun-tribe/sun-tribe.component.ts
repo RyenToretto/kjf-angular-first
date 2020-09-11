@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import {Hero} from '../declares/hero';
 import {HeroService} from "../hero.service";
+import {HeroMessageService} from "../hero-message.service";
 
 @Component({
     selector: 'app-sun-tribe',
@@ -20,7 +21,7 @@ export class SunTribeComponent implements OnInit { // Angular 会在构造出 Su
     // 1. 声明了一个私有 heroService 属性
     // 2. 把它标记为一个 HeroService 的注入点
     // 当 Angular 创建 SunTribeComponent 时，依赖注入系统就会把这个 heroService 参数设置为 HeroService 的单例对象
-    constructor(private heroService: HeroService) { }
+    constructor(private heroService: HeroService, private heroMessageService: HeroMessageService) { }
 
     ngOnInit(): void {
         this.getHeroes();
@@ -40,6 +41,7 @@ export class SunTribeComponent implements OnInit { // Angular 会在构造出 Su
 
     onSelect(hero: Hero): void {
         this.selectedHero = hero;
+        this.heroMessageService.addHeroMessage('选中了一个英雄：' + JSON.stringify(hero));
     }
 
 }

@@ -7,13 +7,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SunTribeComponent } from './sun-tribe/sun-tribe.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { HeroMessagesComponent } from './hero-messages/hero-messages.component';
 
 // NgModule 为 该模块中的 组件 提供了 一个 编译上下文环境
 @NgModule({
     declarations: [ // （可声明对象表） —— 那些属于本 NgModule 的组件、指令、管道
         AppComponent,
         SunTribeComponent,
-        HeroDetailComponent
+        HeroDetailComponent,
+        HeroMessagesComponent
     ],
     // exports: [ AppComponent ], // 其他模块永远不需要导入 根模块，所以这个属性在根模块永远用不着
     imports: [ // （导入表） —— 那些导出了本模块中的组件模板所需的类的 其它模块

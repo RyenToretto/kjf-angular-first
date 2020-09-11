@@ -1,0 +1,10 @@
+<!-- ================ 只有在有消息时才会显示消息区 ================ -->
+<div *ngIf="heroMessageService.heroMessages.length">
+    <h2>英雄提示：</h2>
+
+    <button class="clear" (click)="heroMessageService.clearHeroMessages()">清空</button>
+
+    <div *ngFor='let heroMessage of heroMessageService.heroMessages'>
+        {{heroMessage}}
+    </div>
+</div>
