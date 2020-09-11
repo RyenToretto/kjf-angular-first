@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import {HEROES} from "../mock-data/mock-heroes";
-import {Hero} from "../declares/hero";
+import {HEROES} from '../mock-data/mock-heroes';
+import {Hero} from '../declares/hero';
 
 @Component({
     selector: 'app-sun-tribe',
