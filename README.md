@@ -45,9 +45,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
     /package.json 配置文件依赖
 
-    /tsconfig.json 配置 typescript
-    /tsconfig.spec.json 配置 typescript
-    /tslint.json 配置 typescript
+    /tsconfig.json 配置 typescript /* Tsee: https://angular.io/config/tsconfig. */
+    /tsconfig.spec.json 配置 typescript /* see: https://angular.io/config/solution-tsconfig. */
 
     /.editorconfig 编辑器配置文件
 ```
