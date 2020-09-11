@@ -11,5 +11,5 @@ import { Component } from '@angular/core';
     // 该组件需要哪些服务。当前组件所需若干服务的 提供者数组
 })
 export class AppComponent {
-    title = 'kjf-angular-first';
+    title = '我的部落';
 }

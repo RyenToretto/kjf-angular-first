@@ -1,0 +1,27 @@
+<!-- ================ 双向数据绑定 ================-->
+<p>{{hero.name | uppercase}}</p>
+<div>
+    <label>编辑英雄:
+        <input [(ngModel)]="hero.name" placeholder="name"/>
+    </label>
+</div>
+
+<!-- ================ 英雄列表 ================-->
+<ul class="sun-heroes">
+    <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero.id === selectedHero.id">
+        <span class="id-box">{{hero.id}}</span> {{hero.name}}
+    </li>
+</ul>
+
+<!-- ================ 英雄详情 ================-->
+<div *ngIf="selectedHero && selectedHero.id">
+
+    <h2>{{selectedHero.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{selectedHero.id}}</div>
+    <div>
+        <label>name:
+            <input [(ngModel)]="selectedHero.name" placeholder="name"/>
+        </label>
+    </div>
+
+</div>
