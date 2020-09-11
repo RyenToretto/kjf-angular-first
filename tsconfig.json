@@ -1,11 +1,23 @@
 {
-    "files": [],
-    "references": [
-        {
-            "path": "./tsconfig.app.json"
-        },
-        {
-            "path": "./tsconfig.spec.json"
-        }
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "module": "commonjs",
+        "target": "es6",
+        "outDir": "out",
+        "lib": [
+            "es6"
+        ],
+        "sourceMap": true,
+        "rootDir": "src",
+        "strict": true
+    },
+    "exclude": [
+        ".vscode-test",
+        "node_modules",
+        "sky/node_modules"
+    ],
+    "include": [
+        "src"
     ]
 }
