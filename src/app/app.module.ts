@@ -8,11 +8,14 @@ import { AppComponent } from './app.component';
 import { SunTribeComponent } from './sun-tribe/sun-tribe.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroMessagesComponent } from './hero-messages/hero-messages.component';
+import { RoutingComponent } from './routing/routing.component';
 
 // NgModule 为 该模块中的 组件 提供了 一个 编译上下文环境
 @NgModule({
     declarations: [ // （可声明对象表） —— 那些属于本 NgModule 的组件、指令、管道
         AppComponent,
+        RoutingComponent,
+
         SunTribeComponent,
         HeroDetailComponent,
         HeroMessagesComponent
