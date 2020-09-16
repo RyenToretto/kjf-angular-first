@@ -7,6 +7,7 @@ import { AppRoutingModule } from './router/app-routing.module';
 import { AppComponent } from './app.component';
 
 import { SunTribeComponent } from './components/sun-tribe/sun-tribe.component';
+import { MoonTribeComponent } from './components/moon-tribe/moon-tribe.component';
 import { HeroDetailComponent } from './components/hero-detail/hero-detail.component';
 import { HeroMessagesComponent } from './components/hero-messages/hero-messages.component';
 import { RoutingComponent } from './components/routing/routing.component';
@@ -18,6 +19,7 @@ import { RoutingComponent } from './components/routing/routing.component';
         RoutingComponent,
 
         SunTribeComponent,
+        MoonTribeComponent,
         HeroDetailComponent,
         HeroMessagesComponent
     ],

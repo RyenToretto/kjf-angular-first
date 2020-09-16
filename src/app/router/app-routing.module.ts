@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import {RoutingComponent} from "../components/routing/routing.component";
-import {SunTribeComponent} from "../components/sun-tribe/sun-tribe.component";
+import {RoutingComponent} from '../components/routing/routing.component';
+import {SunTribeComponent} from '../components/sun-tribe/sun-tribe.component';
+import {MoonTribeComponent} from '../components/moon-tribe/moon-tribe.component';
 
 // 告诉路由器, 当 用户单击链接 或 将 URL 粘贴进浏览器地址栏 时，要显示哪个视图
 const routes: Routes = [
     { path: '', redirectTo: '/routing', pathMatch: 'full' },
     { path: 'routing', component: RoutingComponent },
 
-    { path: 'suntribe', component: SunTribeComponent }
+    { path: 'suntribe', component: SunTribeComponent },
+    { path: 'moontribe', component: MoonTribeComponent }
 ];
 
 @NgModule({
