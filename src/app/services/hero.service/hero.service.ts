@@ -32,4 +32,9 @@ export class HeroService {
         this.heroMessageService.addHeroMessage('HeroService: 请求到了 Heroes[]');
         return of(HEROES);
     }
+
+    requestHeroById(id: number): Observable<Hero> {
+        this.heroMessageService.addHeroMessage(`查询到一个英雄： id=${id}`);
+        return of(HEROES.find(hero => hero.id === id));
+    }
 }

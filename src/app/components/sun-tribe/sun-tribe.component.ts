@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import {Hero} from "../../declares/hero";
-import {HeroService} from "../../services/hero.service/hero.service";
-import {HeroMessageService} from "../../services/hero-message/hero-message.service";
+import {Hero} from '../../declares/hero';
+import {HeroService} from '../../services/hero.service/hero.service';
+import {HeroMessageService} from '../../services/hero-message/hero-message.service';
 
 @Component({
     selector: 'app-sun-tribe',
@@ -12,7 +12,6 @@ export class SunTribeComponent implements OnInit { // Angular 会在构造出 Su
 
     title: string = '太阳部落';
 
-    selectedHero: Hero = {};
     hero: Hero = {
         id: 1,
         name: 'KouJianFeng'
@@ -38,11 +37,6 @@ export class SunTribeComponent implements OnInit { // Angular 会在构造出 Su
     getHeroes(): void {
         this.heroService.requestHeroes()
             .subscribe(heroes => this.heroes = heroes);
-    }
-
-    onSelect(hero: Hero): void {
-        this.selectedHero = hero;
-        this.heroMessageService.addHeroMessage('选中了一个英雄：' + JSON.stringify(hero));
     }
 
 }

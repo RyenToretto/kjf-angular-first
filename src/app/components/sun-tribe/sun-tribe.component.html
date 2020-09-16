@@ -10,9 +10,9 @@
 
 <!-- ================ 英雄列表 ================-->
 <ul class="sun-heroes">
-    <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero.id === selectedHero.id">
-        <span class="id-box">{{hero.id}}</span> {{hero.name}}
+    <li *ngFor="let hero of heroes">
+        <a routerLink="/hero_detail/{{hero.id}}">
+            <span class="badge">{{hero.id}}</span> {{hero.name}}
+        </a>
     </li>
 </ul>
-
-<app-hero-detail [theHero]="selectedHero"></app-hero-detail>
