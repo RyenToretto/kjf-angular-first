@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import {Hero} from '../declares/hero';
-import {HeroService} from "../hero.service";
-import {HeroMessageService} from "../hero-message.service";
+import {Hero} from "../../declares/hero";
+import {HeroService} from "../../services/hero.service/hero.service";
+import {HeroMessageService} from "../../services/hero-message/hero-message.service";
 
 @Component({
     selector: 'app-sun-tribe',

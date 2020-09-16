@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import {Hero} from "../declares/hero";
-import {HeroService} from "../hero.service";
+import {HeroService} from '../../services/hero.service/hero.service';
+import {Hero} from '../../declares/hero';
 
 @Component({
     selector: 'app-routing',

@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
      */
     selector: 'app-root', // 如何在 HTML 中引用该组件
     templateUrl: './app.component.html', // 组件的 html 资源，定义了该组件的宿主视图
-    styleUrls: ['./app.component.scss'] // 组件的样式
     // 该组件需要哪些服务。当前组件所需若干服务的 提供者数组
 })
 export class AppComponent {

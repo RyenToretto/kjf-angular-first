@@ -2,13 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './router/app-routing.module';
 
 import { AppComponent } from './app.component';
-import { SunTribeComponent } from './sun-tribe/sun-tribe.component';
-import { HeroDetailComponent } from './hero-detail/hero-detail.component';
-import { HeroMessagesComponent } from './hero-messages/hero-messages.component';
-import { RoutingComponent } from './routing/routing.component';
+
+import { SunTribeComponent } from './components/sun-tribe/sun-tribe.component';
+import { HeroDetailComponent } from './components/hero-detail/hero-detail.component';
+import { HeroMessagesComponent } from './components/hero-messages/hero-messages.component';
+import { RoutingComponent } from './components/routing/routing.component';
 
 // NgModule 为 该模块中的 组件 提供了 一个 编译上下文环境
 @NgModule({
