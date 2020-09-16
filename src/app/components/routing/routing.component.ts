@@ -20,7 +20,7 @@ export class RoutingComponent implements OnInit {
         this.heroService.requestHeroes()
             .subscribe(heroes => this.routingHeroes = heroes.slice(1, 5));
     }
-
+    trackByItems(index: number, hero: Hero): number { return hero.id; }
 }
 
 
