@@ -6,8 +6,7 @@ import {HeroMessageService} from "../hero-message.service";
 
 @Component({
     selector: 'app-sun-tribe',
-    templateUrl: './sun-tribe.component.html',
-    styleUrls: ['./sun-tribe.component.scss']
+    templateUrl: './sun-tribe.component.html'
 })
 export class SunTribeComponent implements OnInit { // Angular 会在构造出 SunTribeComponent 的实例之后的某个合适的时机调用 ngOnInit()
     selectedHero: Hero = {};

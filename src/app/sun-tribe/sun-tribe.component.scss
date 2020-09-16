@@ -8,31 +8,31 @@
         cursor: pointer;
         position: relative;
         left: 0;
-        background-color: #EEE;
+        background-color: $gray-200;
         margin: .5em;
         padding: .3em 0;
         height: 1.6em;
         border-radius: 4px;
         &:hover {
-            color: #607D8B;
-            background-color: #DDD;
+            color: $green-100;
+            background-color: $gray-300;
             left: .1em;
         }
         &.selected {
-            background-color: #CFD8DC;
-            color: white;
+            background-color: $bg-color-selected;
+            color: $white;
             &:hover {
-                background-color: #BBD8DC;
-                color: white;
+                background-color: $green-90;
+                color: $white;
             }
         }
     }
     .id-box {
         display: inline-block;
         font-size: small;
-        color: white;
+        color: $white;
         padding: 0.8em 0.7em 0 0.7em;
-        background-color:#405061;
+        background-color: $green-300;
         line-height: 1em;
         position: relative;
         left: -1px;

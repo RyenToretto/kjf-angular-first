@@ -3,8 +3,7 @@ import {Hero} from '../declares/hero';
 
 @Component({
     selector: 'app-hero-detail',
-    templateUrl: './hero-detail.component.html',
-    styleUrls: ['./hero-detail.component.scss']
+    templateUrl: './hero-detail.component.html'
 })
 export class HeroDetailComponent implements OnInit {
 

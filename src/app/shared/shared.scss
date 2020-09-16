@@ -1,3 +1,48 @@
+@import '../hero-detail/hero-detail.component.scss';
+@import '../hero-messages/hero-messages.component.scss';
+@import '../routing/routing.component.scss';
+@import '../sun-tribe/sun-tribe.component.scss';
+
+[class*='col-'] {
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+[class*='col-']:last-of-type {
+    padding-right: 0;
+}
+
+.col-1-4 {
+    width: 25%;
+}
+
+html {
+    -webkit-text-size-adjust: none;
+    font-size: 14px;
+    line-height: 1.42857143;
+    font-weight: normal;
+    background: $white;
+}
+
+body {
+    font-family: $font-family-default;
+    -webkit-tap-highlight-color: $black;
+    color: $text-primary-color;
+    height: 100%;
+}
+
+body,
+input[type="text"],
+button {
+    color: $text-primary-color;
+    font-family: $font-family-default;
+}
+
+body {
+    background-color: $bg-color-selected;
+}
+
 .wrapper {
     width: 1300px;
     max-width: 1300px;

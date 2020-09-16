@@ -4,8 +4,7 @@ import {HeroMessageService} from "../hero-message.service";
 
 @Component({
     selector: 'app-hero-messages',
-    templateUrl: './hero-messages.component.html',
-    styleUrls: ['./hero-messages.component.scss']
+    templateUrl: './hero-messages.component.html'
 })
 export class HeroMessagesComponent implements OnInit {
 

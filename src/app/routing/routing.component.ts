@@ -5,8 +5,7 @@ import {HeroService} from "../hero.service";
 
 @Component({
     selector: 'app-routing',
-    templateUrl: './routing.component.html',
-    styleUrls: ['./routing.component.scss']
+    templateUrl: './routing.component.html'
 })
 export class RoutingComponent implements OnInit {
     routingHeroes: Hero[] = [];
