@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, AfterViewInit, OnDestroy, ViewChild} from '@angular/core';
+
+import {SvgComponent} from './components/svg/svg.component';
 
 @Component({
     /**
@@ -9,6 +11,26 @@ import { Component } from '@angular/core';
     templateUrl: './app.component.html', // 组件的 html 资源，定义了该组件的宿主视图
     // 该组件需要哪些服务。当前组件所需若干服务的 提供者数组
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit, OnDestroy {
     title = '我的部落';
+    @ViewChild(SvgComponent) private svgComponent: SvgComponent;
+
+    private intervalId: number;
+
+    ngAfterViewInit() {
+        console.log('==== ngAfterViewInit ====> this.svgComponent');
+        console.log(this.svgComponent);
+
+        this.intervalId = setInterval(() => {
+            this.svgComponent.changeColor();
+        }, 300);
+    }
+
+    appStopTimer() {
+        clearInterval(this.intervalId);
+    }
+
+    ngOnDestroy() {
+        this.appStopTimer();
+    }
 }
