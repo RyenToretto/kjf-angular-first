@@ -11,7 +11,12 @@ import { HeroDetailComponent } from '../components/hero-detail/hero-detail.compo
 import { HeroMessagesComponent } from '../components/hero-messages/hero-messages.component';
 import { SvgComponent } from '../components/svg/svg.component';
 
+import {HoverChangeBgColorDirective} from './directives/hover-change-bg-color.directive';
+
+
 const SHARED_COMPONENT = [
+    HoverChangeBgColorDirective,
+
     SunTribeComponent,
     MoonTribeComponent,
     HeroDetailComponent,
