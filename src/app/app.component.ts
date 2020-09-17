@@ -18,12 +18,13 @@ export class AppComponent implements AfterViewInit, OnDestroy {
     private intervalId: number;
 
     ngAfterViewInit() {
-        console.log('==== ngAfterViewInit ====> this.svgComponent');
-        console.log(this.svgComponent);
-
-        this.intervalId = setInterval(() => {
-            this.svgComponent.changeColor();
-        }, 300);
+        if (this.svgComponent) {
+            console.log('==== ngAfterViewInit ====> this.svgComponent');
+            console.log(this.svgComponent);
+            this.intervalId = setInterval(() => {
+                this.svgComponent.changeColor();
+            }, 300);
+        }
     }
 
     appStopTimer() {

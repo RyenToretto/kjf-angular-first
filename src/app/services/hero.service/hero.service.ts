@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 
-import {Observable, of} from "rxjs";
+import {Observable, of} from 'rxjs';
 
-import {HeroMessageService} from "../hero-message/hero-message.service";
-import {Hero} from "../../declares/hero";
-import {HEROES} from "../../mock-data/mock-heroes";
+import {HeroMessageService} from '../hero-message/hero-message.service';
+import {Hero} from '../../declares/hero';
+import {HEROES} from '../../mock-data/mock-heroes';
 
 /**
  可以从任何地方获取数据：Web 服务、本地存储（LocalStorage）或一个模拟的数据源
