@@ -12,10 +12,12 @@ import { HeroMessagesComponent } from '../components/hero-messages/hero-messages
 import { SvgComponent } from '../components/svg/svg.component';
 
 import {HoverChangeBgColorDirective} from './directives/hover-change-bg-color.directive';
+import {VueLikeElseDirective} from './directives/vue-like-else.directive';
 
 
 const SHARED_COMPONENT = [
     HoverChangeBgColorDirective,
+    VueLikeElseDirective,
 
     SunTribeComponent,
     MoonTribeComponent,
