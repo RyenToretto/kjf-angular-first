@@ -13,18 +13,12 @@ import {SvgComponent} from './components/svg/svg.component';
 })
 export class AppComponent implements AfterViewInit, OnDestroy {
     title = '我的部落';
-    @ViewChild(SvgComponent) private svgComponent: SvgComponent;
+    @ViewChild(SvgComponent, {static: false}) private svgComponent: SvgComponent;
 
     private intervalId: number;
 
     ngAfterViewInit() {
-        if (this.svgComponent) {
-            console.log('==== ngAfterViewInit ====> this.svgComponent');
-            console.log(this.svgComponent);
-            this.intervalId = setInterval(() => {
-                this.svgComponent.changeColor();
-            }, 300);
-        }
+        this.svgComponent && this.svgComponent.changeColor();
     }
 
     appStopTimer() {
