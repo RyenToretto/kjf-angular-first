@@ -1,8 +1,32 @@
-<p>name-editor works!</p>
-
-<br />
+<p>
+    Value: {{ fcName.value }}
+</p>
 
 <label>
     姓名:
     <input type="text" [formControl]="fcName">
 </label>
+
+<p>
+    <button (click)="fcUpdateName()">Update Name</button>
+</p>
+
+<br/>
+<hr />
+<br/>
+
+<form [formGroup]="formRegister" (ngSubmit)="handleSubmit()">
+    <label>帐号:
+        <input type="text" formControlName="username">
+    </label>
+
+    <label>密码:
+        <input type="text" formControlName="password">
+    </label>
+
+    <button type="submit" [disabled]="!formRegister.valid">提交表单</button>
+</form>
+
+<br/>
+<br/>
+<hr />
